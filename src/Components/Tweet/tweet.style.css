@@ -1,0 +1,18 @@
+.tweet{
+    border: 1px solid #ededed;
+    padding: 1rem;
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+.tweet img{
+    display: block;
+    width: 16%;
+    margin: 1%;
+    float: left;
+}
+.tweet .content{
+    width: 70%;
+}
