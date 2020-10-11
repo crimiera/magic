@@ -6,11 +6,14 @@ export const fetchLatest = ({count = PERPAGE}) => {
     return  fetch(url, {
         method: "GET",
         headers: {
-          "Content-Type": "application/json"
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
         },
     }).then((response) => {
         return response.json();
-    })
+    }).catch(error => {
+        return false;
+    });
 }
 
 export const fetchMore = ({after,count = PERPAGE }) => {
@@ -18,9 +21,12 @@ export const fetchMore = ({after,count = PERPAGE }) => {
     return  fetch(url, {
         method: "GET",
         headers: {
-          "Content-Type": "application/json"
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
         },
     }).then((response) => {
         return response.json();
-    })
+    }).catch(error => {
+        return false;
+    });
 }
