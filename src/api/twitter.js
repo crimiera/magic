@@ -9,10 +9,6 @@ export const fetchLatest = ({count = PERPAGE}) => {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
         },
-    }).then((response) => {
-        return response.json();
-    }).catch(error => {
-        return false;
     });
 }
 
@@ -24,9 +20,5 @@ export const fetchMore = ({after,count = PERPAGE }) => {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
         },
-    }).then((response) => {
-        return response.json();
-    }).catch(error => {
-        return false;
     });
 }
